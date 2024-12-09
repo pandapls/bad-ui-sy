@@ -53,11 +53,11 @@ export const Colors = () => {
       const tokensFoundBySearch = tokens.filter(
         (token) =>
           token.toLowerCase().includes(newSearchValue) ||
-          theme.webLight[token].toString().includes(newSearchValue) ||
-          theme.webDark[token].toString().includes(newSearchValue) ||
-          theme.teamsLight[token].toString().includes(newSearchValue) ||
-          theme.teamsDark[token].toString().includes(newSearchValue) ||
-          theme.teamsHighContrast[token].toString().includes(newSearchValue)
+          theme.webLight[token]?.toString().includes(newSearchValue) ||
+          theme.webDark[token]?.toString().includes(newSearchValue) ||
+          theme.teamsLight[token]?.toString().includes(newSearchValue) ||
+          theme.teamsDark[token]?.toString().includes(newSearchValue) ||
+          theme.teamsHighContrast[token]?.toString().includes(newSearchValue)
       );
       setTokensSearchResult(tokensFoundBySearch);
     },
