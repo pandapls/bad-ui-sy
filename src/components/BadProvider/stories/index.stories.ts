@@ -1,10 +1,10 @@
 import { Meta } from '@storybook/react';
 import { BadProvider } from 'bad-ui-sy';
-import { Default } from './Default.stories';
+import Nested from './Nested.stories';
+import Default from './Default.stories';
 import DefaultSource from './Default.stories?raw';
 import NestedSource from './Nested.stories?raw';
 
-import { Nested } from './Nested.stories';
 const meta = {
 	title: '组件/BadProvider',
 	component: BadProvider,

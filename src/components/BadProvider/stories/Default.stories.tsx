@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 
-export const Default = () => {
+const Default = () => {
     const styles = useStyles();
     return (
         <>
@@ -52,3 +52,5 @@ export const Default = () => {
         </>
     )
 }
+
+export default Default;

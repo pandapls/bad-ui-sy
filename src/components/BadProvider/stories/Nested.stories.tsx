@@ -25,7 +25,7 @@ function Child() {
     );
 }
 
-export const Nested = () => {
+const Nested = () => {
     const styles = useStyles();
     console.log(styles, 'Nested styles')
 
@@ -47,3 +47,5 @@ export const Nested = () => {
         </BadProvider>
     );
 };
+
+export default Nested;
